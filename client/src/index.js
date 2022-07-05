@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter, Routes, Route } from "render";
-import pages1 from "./pages/page1";
-import page2 from "./pages/page2";
+import { BrowserRouter, Routes, Route } from "react-router-dom"; // changed from render
+import page1 from "./pages/Page1";
+import page2 from "./pages/Page2";
 
 
 
@@ -13,11 +13,11 @@ const root = render.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-    <Routes>
-      <Route path="/pages/page1" element={<page1 />} />
+      <Routes>
+        <Route path="/pages/page1" element={<page1 />} />
         <Route path="/pages/page2" element={<page2 />} />
-          <Route path="/App" element={<App />} />
-    </Routes>
+        <Route path="/App" element={<App />} />
+      </Routes>
     </BrowserRouter>
   </React.StrictMode>
 );

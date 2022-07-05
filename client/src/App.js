@@ -8,8 +8,8 @@ const navigate = userNavigate();
 
   return (
     <div className="App">
-     <hi> Home Page </hi>
-     <button onClick={() => navigate("")}>NEXT</button>
+      <hi> Home Page </hi>
+      <button onClick={() => navigate("")}>NEXT</button>
     </div>
   );
 }
